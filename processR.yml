@@ -1,0 +1,8 @@
+apps:
+  - script   : app.js
+    name : kc_spider
+    instances: 1
+    exec_mode: fork
+    node_args: --harmony
+    env:
+      NODE_ENV: production

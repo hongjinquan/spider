@@ -1,0 +1,16 @@
+src/*
+
+node_modules
+
+package-lock.json
+
+#vscode 
+.vscode
+
+# ide
+.idea
+
+# Mac General
+.DS_Store
+.AppleDouble
+.LSOverride

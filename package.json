@@ -1,0 +1,38 @@
+{
+  "name": "kc_spider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run build && node app.js",
+    "start:dev": "npm install && npm run build && pm2 start processD.yml",
+    "start:release": "npm install && npm run build && pm2 start processR.yml",
+    "build": "babel lib -d src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cross-env": "^5.2.0",
+    "https": "^1.0.0",
+    "log4js": "^4.1.0",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "node-fetch": "^2.3.0",
+    "node-schedule": "^1.3.2",
+    "request": "^2.88.0",
+    "superagent": "^5.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
