@@ -30,15 +30,10 @@ async function main() {
     let connection = new HiveConnection(configuration, idl);
     console.log('connection', connection);
     let cursor = await connection.connect();
+    console.log('cursor', cursor);
     const data = await cursor.execute(config.Query.query);
     console.log('data', data);
   })
-  // let connection = new HiveConnection(configuration, idl);
-  // console.log('connection', connection);
-  // let cursor = await connection.connect();
-  // console.log('cursor', cursor);
-  // let serviceType = idl.ServiceType;
-  // console.log('serviceType', serviceType);
 }
 
 main();

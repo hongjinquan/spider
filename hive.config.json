@@ -28,6 +28,6 @@
         "i64ToString": true
     },
     "Query": {
-        "query": "select * from default.something where part_date > '20141111'"
+        "query": "select * from ods.`lesson` limit 10"
     }
 }
