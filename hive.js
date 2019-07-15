@@ -24,7 +24,7 @@ const idl = new IDLContainer();
 
 
 
-async function main() {
+const main = async () => {
   idl.initialize(configuration).then(async (rs) => {
     console.log('=======', rs);
     let connection = new HiveConnection(configuration, idl);
@@ -36,4 +36,6 @@ async function main() {
   })
 }
 
-main();
+module.exports = {
+  main: main
+}
