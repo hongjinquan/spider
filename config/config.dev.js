@@ -20,8 +20,8 @@ module.exports = {
         }
     },
     redis: {
-        host: "39.96.173.160",
-        port: '16380',
-        pass: "kaochong_xnr_test_root_123"
+        host: "127.0.0.1",
+        port: '6379',
+        password: "root"
     }
 }

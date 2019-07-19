@@ -13,8 +13,8 @@ module.exports = {
         }
     },
     redis: {
-        host: "r-2zeea7f034b57794.redis.rds.aliyuncs.com",
+        host: "127.0.0.1",
         port: '6379',
-        pass: "FW^L^NRMs7eh@jsPAv"
+        password: "kaochong_competitor"
     }
 }
